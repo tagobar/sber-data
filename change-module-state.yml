@@ -1,5 +1,5 @@
 ---
-- name: Test connection
+- name: Change Hadoop component state
   hosts: hadoop
   roles:
   - change-module-state

@@ -1,5 +1,5 @@
 ---
-- name: Test connection
+- name: Playbook for install and uninstall nginx
   hosts: hadoop
   roles:
   - nginx
