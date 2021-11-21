@@ -1,0 +1,24 @@
+---
+- name: Start HDFS service
+  shell: source /etc/profile.d/java.sh && /opt/hadoop/sbin/start-dfs.sh
+  tags: start-dfs
+
+- name: Stop HDFS service
+  shell: source /etc/profile.d/java.sh && /opt/hadoop/sbin/stop-dfs.sh
+  tags: stop-dfs
+
+- name: Start Yarn service
+  shell: source /etc/profile.d/java.sh && /opt/hadoop/sbin/start-yarn.sh
+  tags: start-yarn
+
+- name: Stop Yarn service
+  shell: source /etc/profile.d/java.sh && /opt/hadoop/sbin/stop-yarn.sh
+  tags: stop-yarn
+
+- name: Start HBase service
+  shell: source /etc/profile.d/java.sh && /opt/hbase/bin/start-hbase.sh
+  tags: start-hbase
+
+- name: Stop HBase service
+  shell: source /etc/profile.d/java.sh && /opt/hbase/bin/stop-hbase.sh
+  tags: stop-hbase

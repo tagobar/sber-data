@@ -1,0 +1,5 @@
+---
+- name: Test connection
+  hosts: hadoop
+  roles:
+  - change-module-state

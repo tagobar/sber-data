@@ -1,0 +1,5 @@
+[all]
+sber-hadoop.tagobar.corp	ansible_host=192.168.66.192 ansible_become=true ansible_user=root
+
+[hadoop]
+sber-hadoop.tagobar.corp
