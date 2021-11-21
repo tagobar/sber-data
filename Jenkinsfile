@@ -80,7 +80,6 @@ pipeline {
                     final String response = sh(script: "curl -s ${NGINX_URL} || exit 0", returnStdout: true).trim()
                     if (response.indexOf("${NGINX_SUBSTRING}") >=0) {
                         echo "=== Nginx status: OK ==="
-                        HBASE_STATUS = true
                     } else {
                         echo "=== Nginx status: Fail ==="
                         sh 'exit 1'
